@@ -5,9 +5,12 @@ a small HTTP API. The API and proxy are separate containers; the API shares the
 X11 socket with the WeChat container so it can read the QR screen and perform
 the configured link click.
 
+详细 HTTP 接口说明见 [docs/API.md](docs/API.md)。
+
 Build and start:
 
 ```sh
+cd ~/Soft/wecookie
 docker compose build
 docker compose up -d
 docker compose logs -f wechat
